@@ -5,7 +5,7 @@ import Questions from "./components/Questions";
 import questions from "./data";
 
 const App = () => {
-  const [question, setQuestion] = useState(questions);
+  const [question] = useState(questions);
 
   return (
     <div className="main-card">
