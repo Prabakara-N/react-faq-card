@@ -5,6 +5,8 @@ import Questions from "./components/Questions";
 import questions from "./data";
 
 const App = () => {
+  // set question not added because we dont need re render the state we used questions from data only so that...if we put setQuestion for deploying in netlify it shows error like...(setQuestion mention but not used)
+
   const [question] = useState(questions);
 
   return (
