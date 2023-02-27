@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-dark-violet: #011936;
+  --clr-Very-Dark: #161722;
+  --clr-Very-Dark-Desaturated-Blue: #25273c;
+  --clr-Very-Grayish-Blue: #4d5066;
+  --clr-Very-Dark-Grayish-Blue: #393a4c;
+  --clr-verdigris: #48a9a6;
+  --dark-pastel-green: #20bf55;
+  --clr-blue: #0b4f6c;
+  --clr-royal-blue-dark: #03256c;
+  --clr-denim-blue: #2541b2;
+  --clr-blue: #1768ac;
+  --clr-Dark-Blue: #2b3945;
+  --clr-Very-Dark-Blue: #202c37;
+  --clr-Very-Dark-Blue-Light: #111517;
+  --clr-Dark-Grayish-Blue: #323a49;
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--clr-dark-violet);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* main card */
+h1 {
+  color: #03256c;
+}
+
+.main-card {
+  width: 95%;
+  margin: auto;
+  padding: 0.75rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.answer {
+  color: var(--clr-Very-Dark-Grayish-Blue);
+}
+
+.arrow-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.arrow {
+  margin-top: -1rem;
+  transition: all 0.3s;
+}
+
+.arrow:hover {
+  color: var(--clr-denim-blue);
+  transition: all 0.3s;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .main-card {
+    width: 530px;
+    margin: 0 auto;
+  }
+}
